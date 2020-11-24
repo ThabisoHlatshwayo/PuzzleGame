@@ -172,8 +172,8 @@ class Box {
         }
       }
       document.querySelector(".grid").replaceWith(newGrid);
-  
-      // Render button
+
+    // Render button
       const newButton = document.createElement("button");
       if (status === "ready") newButton.textContent = "Play";
       if (status === "playing") newButton.textContent = "Reset";
@@ -198,6 +198,7 @@ class Box {
         document.querySelector(".message").textContent = "";
       }
     }
+    
   }
   
   const GAME = Game.ready();
