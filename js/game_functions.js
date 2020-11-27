@@ -105,7 +105,7 @@ class Box {
     }
   }
   
-  class Game {
+  export class Game {
     constructor(state) {
       this.state = state;
       this.tickId = null;
@@ -172,8 +172,8 @@ class Box {
         }
       }
       document.querySelector(".grid").replaceWith(newGrid);
-
-    // Render button
+  
+      // Render button
       const newButton = document.createElement("button");
       if (status === "ready") newButton.textContent = "Play";
       if (status === "playing") newButton.textContent = "Reset";
@@ -186,8 +186,8 @@ class Box {
       document.querySelector(".footer button").replaceWith(newButton);
   
       // Render move
-      var move_s = document.getElementById("move").textContent = `Move: ${move}`;
-  
+      document.getElementById("move").textContent = `Points: ${move * 2}`;
+
       // Render time
       document.getElementById("time").textContent = `Time: ${time}`;
   
@@ -200,6 +200,4 @@ class Box {
     }
     
   }
-  
-  const GAME = Game.ready();
-  
+const GAME = Game.ready();  

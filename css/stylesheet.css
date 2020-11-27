@@ -22,14 +22,14 @@ html {
     top: 20px;
   }
 
-  .randomise {
+  .randomise_ {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
     padding: 15px;
     background-color: #fd0707;
     border-radius: 5px;
     position: absolute;
     left: 760px;
-    right: 160px;
+    right: 140px;
     top: 235px;
   }
 

@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Puzzle game</title>
@@ -6,16 +6,14 @@
   </head>
 
   <body>
-    <div class="leaderboard">
-      <h5>leaderboard</h5>
       <div id="leaderboard" class="leaderboard">
 
       </div>
     </div>
-    <div class="randomise">
-      <button onclick="randomize()">Refresh</button>
+    <div class="randomise_">
+      <button onclick="randomize()">Randomise</button>
     </div>
-    <script src="js/leaderboard.js"></script>
+    <script type="module" src="js/leaderboard.js"></script>
     <div class="game">
       <h5>The following Puzzle is a website URL of a company</h5>
           <p> Hint!!: C******E.**.**/</p>
@@ -40,13 +38,12 @@
 
       <div class="footer">
         <button>Play</button>
-        <span id="move">Move: 100</span>
+        <span id="move">Points: 1000</span>
         <span id="time">Time: 100</span>
       </div>
     </div>
     <h1 class="message">You win!</h1>
 
-
-    <script src="js/game_functions.js"></script>
+    <script type="module" src="js/game_functions.js"></script>
   </body>
 </html>
