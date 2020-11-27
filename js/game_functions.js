@@ -105,7 +105,7 @@ class Box {
     }
   }
   
-  export class Game {
+  class Game {
     constructor(state) {
       this.state = state;
       this.tickId = null;

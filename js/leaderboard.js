@@ -1,6 +1,3 @@
-import Game from './game_functions.js';
-new Game();
-
 let scores = [
     {name: "Player 1", score: 0},
     {name: "Player 2", score: 0},
